@@ -1,6 +1,6 @@
 .mob-menu {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   position: fixed;
   background-color: #fff;
   top: 0;
@@ -14,11 +14,16 @@
   flex-direction: column;
   justify-content: space-between;
   background: #6A54FF;
-  overflow-y: auto;
+
 
   @media (min-width: 615px) {
     width: 50vw;
   }
+}
+
+.mob-menu-list__wrapper {
+  overflow-y: auto;
+  height: 80dvh;
 }
 
 .mob-menu__btn {
@@ -93,6 +98,7 @@
 .down-btn {
   display: flex;
   column-gap: 16px;
+  padding-bottom: 10px;
 
   &__log-out {
     color: #030718;
