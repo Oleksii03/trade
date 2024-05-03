@@ -1,13 +1,16 @@
 .hero {
   padding-top: 40px;
+  padding-bottom: 61px;
   background-color: var(--black-background-color);
-  min-height: 80vh;
   clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 64% 100%, 57% 93%, 0 93%, 0 0);
+
+  // min-height: 80vh;
 }
 
 .short-box {
   position: relative;
   padding: 6px 10px;
+  margin-bottom: 63px;
   width: 176px;
 
   border-radius: 4px;
@@ -68,11 +71,15 @@
     font-weight: 400;
     line-height: 123.077%;
 
+    opacity: 0.6;
+
     &_after {
       font-size: 13px;
 
       font-weight: 400;
       line-height: 123.077%;
+
+      opacity: 0.6;
     }
   }
 }
@@ -107,4 +114,50 @@
   line-height: 140%;
   letter-spacing: -0.8px;
   text-transform: uppercase;
+}
+
+// ----hero-main__content---------------
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+
+  &__title {
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 125.714%;
+    letter-spacing: -1.4px;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    color: #E7F7F8;
+
+    font-weight: 400;
+    line-height: 125%;
+
+    opacity: 0.8;
+  }
+}
+
+
+.wrapper-input {
+  margin-top: 12px;
+
+  padding: 12px 4px 4px 4px;
+}
+
+
+
+.main-content__sub-text {
+  color: #FFF;
+  font-feature-settings: 'ss04' on;
+  font-family: "IBM Plex Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  /* 142.857% */
+  opacity: 0.3;
 }
