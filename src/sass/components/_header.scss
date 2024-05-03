@@ -2,16 +2,29 @@
   background-color: var(--black-background-color);
 
   &__container {
-    @include flex
+    @include flex;
   }
 }
 
 .logo {
-  margin-right: 8.0625rem;
+  margin-right: 129px;
+
+  &__img {
+    width: 107.111px;
+    height: 52px;
+
+    @media (min-width: 768px) {
+      width: 131.829px;
+      height: 64px;
+    }
+  }
 }
+
+// ---menu-----
 
 .header__menu {
   display: flex;
+  flex-grow: 1;
 }
 
 .menu__list {
@@ -48,49 +61,53 @@
 // ---header__btn-registration----
 
 .registration-btn {
-  font-size: 14px;
+  display: none;
 
-  @include flex;
-  column-gap: 16px;
-  margin-left: auto;
+  @media (min-width: 768px) {
+    font-size: 14px;
 
-  &__sign-up {
-    color: #57E1FF;
+    @include flex;
+    column-gap: 16px;
+    margin-left: auto;
 
-    line-height: 142.857%;
-    text-transform: uppercase;
+    &__sign-up {
+      color: #57E1FF;
 
-    padding: 11px 24px;
+      line-height: 142.857%;
+      text-transform: uppercase;
 
-    border-radius: 3px;
-    border: 1.5px solid #57E1FF;
-    background: rgba(87, 225, 255, 0.20);
-    box-shadow: 0px 0px 4px 0px #57E1FF;
+      padding: 11px 24px;
 
-    transition: all 100ms linear;
+      border-radius: 3px;
+      border: 1.5px solid #57E1FF;
+      background: rgba(87, 225, 255, 0.20);
+      box-shadow: 0px 0px 4px 0px #57E1FF;
 
-    &:hover {
-      transform: scale(1.02);
+      transition: all 100ms linear;
+
+      &:hover {
+        transform: scale(1.02);
+      }
     }
-  }
 
-  &__log-out {
-    color: #030718;
+    &__log-out {
+      color: #030718;
 
-    padding: 11px 24px;
+      padding: 11px 24px;
 
-    line-height: 20px;
-    /* 142.857% */
-    text-transform: uppercase;
+      line-height: 20px;
+      /* 142.857% */
+      text-transform: uppercase;
 
-    border-radius: 3px;
-    border: 1px solid #57E1FF;
-    background: #57E1FF;
-    box-shadow: 0px 0px 4px 0px #57E1FF;
-    transition: all 100ms linear;
+      border-radius: 3px;
+      border: 1px solid #57E1FF;
+      background: #57E1FF;
+      box-shadow: 0px 0px 4px 0px #57E1FF;
+      transition: all 100ms linear;
 
-    &:hover {
-      transform: scale(1.02);
+      &:hover {
+        transform: scale(1.02);
+      }
     }
   }
 }
