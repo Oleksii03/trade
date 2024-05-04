@@ -73,6 +73,10 @@
   overflow-x: auto;
 
   margin-right: -15px;
+
+  @media (min-width: 375px) {
+    margin-right: -20px;
+  }
 }
 
 .deals__card-item {
