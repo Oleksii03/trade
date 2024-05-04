@@ -14,8 +14,6 @@
 }
 
 .short-box {
-  order: 1;
-  align-self: self-start;
   position: relative;
   padding: 6px 10px;
   margin-bottom: 63px;
@@ -52,6 +50,11 @@
     background-color: #6A54FF;
 
     transform: rotate(45deg);
+  }
+
+  @media (min-width: 768px) {
+    order: 1;
+    align-self: self-start;
   }
 }
 
