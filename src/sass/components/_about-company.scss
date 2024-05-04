@@ -1,0 +1,27 @@
+.about-company {
+  color: var(--black-background-color);
+
+  padding-top: 24px;
+  padding-bottom: 132px;
+}
+
+.about-company__content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.about-company__title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 128.571%;
+  letter-spacing: -1.12px;
+  text-transform: uppercase;
+}
+
+.about-company__text {
+  font-weight: 400;
+  line-height: 125%;
+
+  opacity: 0.8;
+}
