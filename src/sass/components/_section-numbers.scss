@@ -13,8 +13,6 @@
 .numbers__container {
   @media (min-width: 1440px) {
     @include flex;
-    // display: flex;
-    // justify-content: space-between;
   }
 }
 
@@ -64,8 +62,11 @@
 
 .profit_left {
   display: flex;
+  column-gap: 35px;
 
-  column-gap: 65px;
+  @media (min-width: 375px) {
+    column-gap: 65px;
+  }
 
   @media (min-width: 768px) {
     display: flex;
