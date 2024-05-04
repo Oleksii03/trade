@@ -5,7 +5,17 @@
   clip-path: polygon(30% 0%, 70% 0%, 100% 0, 100% 100%, 64% 100%, 57% 93%, 0 93%, 0 0);
 }
 
+.hero__container {
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 70px;
+  }
+}
+
 .short-box {
+  order: 1;
+  align-self: self-start;
   position: relative;
   padding: 6px 10px;
   margin-bottom: 63px;
