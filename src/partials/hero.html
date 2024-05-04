@@ -32,10 +32,13 @@
         Начни копировать сделки с успешной командой профессиональных трейдеров в автоматическом режиме.
       </p>
 
-      <div class="hero__input-wrapper wrapper-input">
-        <input type="email" class="hero__input" placeholder="Ваш e–mail">
-        <button class="wrapper-input__btn">начать</button>
-      </div>
+      <form class="hero__form">
+        <div class="hero__input-wrapper wrapper-input">
+          <input type="email" class="hero__input" placeholder="Ваш e–mail" name="useremail" id="email" required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+          <button type="submit" class="wrapper-input__btn">начать</button>
+        </div>
+      </form>
 
       <p class="main-content__sub-text">5 дней бесплатного пользования</p>
     </div>
