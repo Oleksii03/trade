@@ -1,6 +1,8 @@
 .deals {
   background-color: var(--black-background-color);
 
+  overflow: hidden;
+
   padding-top: 48px;
   padding-bottom: 77px;
 
@@ -15,6 +17,7 @@
     padding-bottom: 178px;
   }
 }
+
 
 .deals__title {
   font-size: 28px;
@@ -64,9 +67,21 @@
 
 // ----card-list-------------
 
+.deals__card-list {
+  @include flex;
+
+  overflow-x: auto;
+
+  margin-right: -15px;
+}
+
 .deals__card-item {
   width: 299px;
   height: 208px;
+
+  margin-right: 8px;
+
+  flex-shrink: 0;
 
   padding: 16px 16px 13px;
 
