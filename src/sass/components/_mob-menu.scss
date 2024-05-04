@@ -10,11 +10,7 @@
 }
 
 .mob-menu_flex {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background: #6A54FF;
-
 
   @media (min-width: 615px) {
     width: 50vw;
@@ -24,7 +20,7 @@
 .mob-menu-list__wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   overflow-y: auto;
   height: calc(100dvh - 68px);
 }
