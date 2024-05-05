@@ -57,6 +57,11 @@
 
 // ---tariffs-card----
 
+.tariffs__card-box {
+  display: grid;
+  row-gap: 20px;
+}
+
 .tariffs-card__wrap {
   border-radius: 8px;
   border: 1px solid #6A54FF;
@@ -120,4 +125,85 @@
 .tariffs-card__text {
   font-weight: 400;
   line-height: 125%;
+}
+
+// ---tariffs-card__price--
+
+.tariffs-card__price {
+  @include flex;
+  justify-content: space-between;
+
+  margin-bottom: 24px;
+}
+
+.card-price__number {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-size: 35px;
+  line-height: 114.286%;
+  letter-spacing: -1.4px;
+
+  &>sup {
+    color: #35FF9E;
+    letter-spacing: -0.72px;
+    font-size: 18px;
+    line-height: 111.111%;
+  }
+}
+
+.card-price__btn-wrap {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.20);
+
+  padding: 7px 5px 7px 8px;
+}
+
+.card-price__btn {
+  display: flex;
+  column-gap: 4px;
+  font-weight: 400;
+  line-height: 125%;
+
+
+  &>span {
+    display: block;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+  }
+}
+
+// ---tariffs-card__btn---
+.tariffs-card__btn {
+  display: flex;
+  width: 100%;
+
+  padding: 16px 24px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+
+  border-radius: 3px;
+  background: #57E1FF;
+  box-shadow: 0px 0px 4px 0px #57E1FF;
+
+  color: #030718;
+}
+
+.tariffs-card__btn-title {
+  font-style: normal;
+  font-weight: 500;
+  line-height: 125%;
+
+  text-transform: uppercase;
+}
+
+.tariffs-card__btn-sub-title {
+  opacity: 0.56;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 133.333%;
 }
