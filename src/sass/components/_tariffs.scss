@@ -8,6 +8,10 @@
   }
 }
 
+.tariffs__container {
+  max-width: 864px;
+}
+
 .tariffs__title {
   font-size: 28px;
   font-weight: 700;
@@ -17,6 +21,14 @@
   text-transform: uppercase;
 
   margin-bottom: 24px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+
+    font-size: 44px;
+    line-height: 127.273%;
+    letter-spacing: -1.76px;
+  }
 }
 
 .tariffs__btn-box {
@@ -29,6 +41,10 @@
 
   padding: 4px;
   margin-bottom: 24px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 44px;
+  }
 }
 
 .tariffs__btn {
@@ -59,16 +75,26 @@
 
 .tariffs__card-box {
   display: grid;
-  row-gap: 20px;
+  gap: 20px;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 .tariffs-card__wrap {
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   border: 1px solid #6A54FF;
 
   padding: 16px;
 
   overflow: hidden;
+
+  @media (min-width: 1440px) {
+    padding: 24px;
+  }
 }
 
 .tariffs-card__title {
@@ -79,6 +105,11 @@
   letter-spacing: -0.8px;
 
   margin-bottom: 24px;
+
+  @media (min-width: 1440px) {
+    font-size: 32px;
+    margin-bottom: 56px;
+  }
 }
 
 .tariffs-card__list {
@@ -88,6 +119,10 @@
   row-gap: 16px;
 
   margin-bottom: 32px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 40px;
+  }
 }
 
 .tariffs-card__item {
@@ -133,6 +168,7 @@
   @include flex;
   justify-content: space-between;
 
+  margin-top: auto;
   margin-bottom: 24px;
 }
 
@@ -179,7 +215,7 @@
   display: flex;
   width: 100%;
 
-  padding: 16px 24px;
+  padding: 8px 24px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -206,4 +242,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: 133.333%;
+}
+
+// --tariffs-card__wrap-accent ---
+
+.tariffs-card__wrap-accent {
+  background: #6A54FF;
 }
