@@ -1,29 +1,5 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
-// -----------------------------------
-// * {
-//   overscroll-behavior: none;
-// }
-
-// ::-webkit-scrollbar {
-//   height: 6px;
-// }
-
-// ::-webkit-scrollbar-track {
-//   border-radius: 56px;
-//   opacity: 0.4;
-//   background: #434F70;
-//   width: 56px;
-// }
-
-// ::-webkit-scrollbar-thumb {
-//   width: 61px;
-//   border-radius: 100px;
-//   background: #6073A1;
-// }
-
-
-// ----------------------------------------
 
 html {
   scroll-behavior: smooth;
@@ -67,11 +43,12 @@ p {
 }
 
 body {
-  // line-height: calc(lh / fs);
   font-feature-settings: 'case' on, 'ss04' on;
   font-family: var(--primary-font);
   font-weight: 500;
   color: var(--lite-text-color);
+}
 
-  // -------------------
+.to-freeze {
+  overflow: hidden;
 }
