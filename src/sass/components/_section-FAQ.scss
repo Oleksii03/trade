@@ -31,8 +31,13 @@
   margin-bottom: 12px;
 
   border-radius: 4px;
-  background: #41bbd4;
+  background-color: #EAEFF0;
+
   overflow: hidden;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .label {
@@ -52,7 +57,9 @@
 
 .content {
   position: relative;
-  background-color: #c36a6a;
+
+  font-weight: 400;
+  line-height: 125%;
 
   overflow: hidden;
   max-height: 0;
@@ -61,11 +68,30 @@
 }
 
 .content__text {
-  padding: 16px;
+  padding: 0px 16px 16px 16px;
 }
 
 .active>.label {
+  color: #FFF;
+  font-size: 20px;
+  line-height: 140%;
+
+  letter-spacing: -0.8px;
+  background: #6A54FF;
+
   &>svg {
     transform: rotate(180deg);
+  }
+
+  &~.content {
+    color: var(--white, #FFF);
+    background: #6A54FF;
+
+    font-weight: 400;
+    line-height: 125%;
+
+    &>p {
+      opacity: 0.8;
+    }
   }
 }
