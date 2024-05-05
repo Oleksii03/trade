@@ -88,13 +88,9 @@
   @include flex;
   column-gap: 8px;
   overflow-x: auto;
-  // margin-right: -15px;
+
   padding-bottom: 16px;
 
-
-  @media (min-width: 375px) {
-    // margin-right: -20px;
-  }
 
   @media (min-width: 768px) {
     column-gap: 20px;
@@ -106,7 +102,6 @@
   width: 299px;
   height: 208px;
 
-  // margin-right: 8px;
 
   flex-shrink: 0;
 
