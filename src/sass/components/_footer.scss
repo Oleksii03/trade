@@ -41,7 +41,6 @@
 
       opacity: 0.3;
     }
-
   }
 }
 
@@ -67,13 +66,19 @@
   opacity: 0.4;
 }
 
+
 .content__link {
   font-size: 14px;
   line-height: 20px;
   /* 125% */
   text-transform: uppercase;
+  transition: all 250ms linear;
 
   opacity: 0.6;
+
+  &:hover {
+    color: #57E1FF;
+  }
 }
 
 .footer__bottom {
